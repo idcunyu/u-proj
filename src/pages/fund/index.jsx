@@ -1,11 +1,19 @@
-import React from 'react';
+import React, { Component } from 'react'
 import { Button } from 'antd';
 import './index.less';
 
-const PageFund = () => (
-  <div className="page-fund">
-    <Button type="primary">Fund</Button>
-  </div>
-);
+class PageFund extends Component {
+  componentDidMount() {
+    document.title = 'Fund Page'
+  }
+
+  render() {
+    return (
+      <div className="page-fund">
+        <Button type="primary">Fund</Button>
+      </div>
+    )
+  }
+};
 
 export default PageFund;

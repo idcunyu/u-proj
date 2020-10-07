@@ -1,12 +1,19 @@
-import React from 'react';
+import React, { Component } from 'react'
 import { Button } from 'antd';
 import './index.less';
 
-const PageIndex = () => (
-  <div className="page-index">
-    <Button type="primary">Button</Button>
-    <a href="/fund">123</a>
-  </div>
-);
+class PageIndex extends Component {
+  componentDidMount() {
+    document.title = 'Index Page'
+  }
+
+  render() {
+    return (
+      <div className="page-index">
+        <Button type="primary">Index</Button>
+      </div>
+    )
+  }
+};
 
 export default PageIndex;
