@@ -9,27 +9,27 @@ class IndexFeature extends Component {
         {
           pic: '/assets/images/index/feature1.png',
           title: 'Pure-Decentralization',
-          desc: 'All the modules of Unimine are runing on<br/> the ethereum network without any<br/> centralized services. All the programming<br/> are built the smart contract code.'
+          desc: 'All the modules of Unimine are runing on the ethereum network without any centralized services. All the programming are built the smart contract code.'
         }, {
           pic: '/assets/images/index/feature2.png',
           title: 'Non-KYC',
-          desc: 'All users are anonymous without KYC.it<br/> can protect the privacy of all the<br/> participants.'
+          desc: 'All users are anonymous without KYC.it can protect the privacy of all the participants.'
         }, {
           pic: '/assets/images/index/feature3.png',
           title: 'Open',
-          desc: 'Unimine will open the mining protocol api<br/> which are the smart constract code of<br/> etherum.'
+          desc: 'Unimine will open the mining protocol api which are the smart constract code of etherum.'
         }, {
           pic: '/assets/images/index/feature4.png',
           title: 'Instant',
-          desc: 'Transcations and settlements are finished<br/> in every new block. It’s fast and instant.'
+          desc: 'Transcations and settlements are finished in every new block. It’s fast and instant.'
         }, {
           pic: '/assets/images/index/feature5.png',
           title: 'Transparency',
-          desc: 'The smart contract code is open source.<br/> Anyone can see the code and the entire<br/> transaction history'
+          desc: 'The smart contract code is open source. Anyone can see the code and the entire transaction history'
         }, {
           pic: '/assets/images/index/feature6.png',
           title: 'Governance',
-          desc: 'UMI is the governance token of unimie,<br/> and all the governance functionality are<br/> decentralization.'
+          desc: 'UMI is the governance token of unimie, and all the governance functionality are decentralization.'
         }
       ]
     }
