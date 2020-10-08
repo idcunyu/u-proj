@@ -23,8 +23,10 @@ class CommonHeader extends Component {
   }
 
   render() {
+    const { showWapNav = false } = this.state;
+
     return (
-      <div className="common-header-wrap">
+      <div className={`common-header-wrap ${showWapNav ? 'active' : ''}`}>
         <div className="common-header">
           <a href="/" className="logo-wrap">
             <img src="/assets/images/common/logo.png" alt="Unimine" className="logo-pic"/>
@@ -36,7 +38,7 @@ class CommonHeader extends Component {
             <a href="/faq" className="nav-item">FAQ</a>
           </div>
           <div className="wap-nav-btn" onClick={this.clickWapNavBtn.bind(this)}></div>
-          {this.state.showWapNav && <div className="wap-nav">
+          {showWapNav && <div className="wap-nav">
             <a href="/" className="nav-item">UMI TOKEN</a>
             <a href="/fund" className="nav-item">FUND</a>
             <a href="/about" className="nav-item">ABOUT</a>
