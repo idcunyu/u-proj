@@ -1,17 +1,17 @@
 import React, { Component } from 'react'
-import { Button } from 'antd';
 import './index.less';
+import Page from '@/layout/default';
 
 class PageFund extends Component {
   componentDidMount() {
-    document.title = 'Fund Page'
+    document.title = 'Unimine Fund'
   }
 
   render() {
     return (
-      <div className="page-fund">
-        <Button type="primary">Fund</Button>
-      </div>
+      <Page className="page-fund">
+        
+      </Page>
     )
   }
 };
