@@ -9,11 +9,11 @@ class IndexRound extends Component {
         {
           pic: '/assets/images/index/state1.png',
           title: 'Classic',
-          desc: 'Different classic decentralized mining<br/> pools will built and opening in this period.<br/> Integrating users and building high-yield<br/> mining pools are the main missions of this<br/> period.Each users can give the<br/> suggestions in the community.'
+          desc: 'Different classic decentralized mining pools will built and opening in this period. Integrating users and building high-yield mining pools are the main missions of this period.Each users can give the suggestions in the community.'
         }, {
           pic: '/assets/images/index/state2.png',
           title: 'Open Platform',
-          desc: 'Opening the protocol and api are finished<br/> in this period. Developers and project founders can join deeply and build theirselve’s pool. They can create new mining algorithms and new inercations, and also can fork them from the pools online with the ERC20 Token.'
+          desc: 'Opening the protocol and api are finished in this period. Developers and project founders can join deeply and build theirselve’s pool. They can create new mining algorithms and new inercations, and also can fork them from the pools online with the ERC20 Token.'
         }, {
           pic: '/assets/images/index/state3.png',
           title: 'Innovation',
@@ -36,8 +36,11 @@ class IndexRound extends Component {
           <div className="d1">
             The Unimine Period
           </div>
-          <div className="d2">
+          <div className="d2 pc">
             This is the development goals for Unimine.More functions and services will be<br/> opened at different times.
+          </div>
+          <div className="d2 wap">
+            This is the development goals for Unimine.More<br/> functions and services will be opened at different<br/> times.
           </div>
           <div className="round-list">
             {roundList && roundList.length ? roundList.map((item, index) => {

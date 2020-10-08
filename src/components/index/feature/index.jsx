@@ -45,12 +45,22 @@ class IndexFeature extends Component {
       <div className="index-feature">
         <div className="index-feature-all">
           <div className="title">FEATURES</div>
-          <div className="d1">
+          <div className="d1 pc">
+            Unimine is the best platform to<br/>
+            get started mining<br/>
+            cryptocurrency.
+          </div>
+          <div className="d1 wap">
             Unimine is the best platform to get started mining<br/>
             cryptocurrency.
           </div>
-          <div className="d2">
+          <div className="d2 pc">
             Unimine is the best platform to get started mining cryptocurrency. It is the easiest platform for<br/>
+            beginners to easily get into Blockchain.
+          </div>
+          <div className="d2 wap">
+            Unimine is the best platform to get started mining<br/>
+            cryptocurrency. It is the easiest platform for<br/>
             beginners to easily get into Blockchain.
           </div>
           <div className="feature-list">

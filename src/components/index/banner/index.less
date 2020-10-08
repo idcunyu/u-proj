@@ -1,11 +1,12 @@
 .index-banner {
   background: url('/assets/images/index/bg_home_banner1.png');
-  background-size: contain;
+  background-size: cover;
   width: 100%;
   height: 845px;
   .index-banner-all {
     width: 1200px;
     margin: 0px auto;
+    padding-bottom: 40px;
     .slogan {
       margin-top: 250px;
       width: 912px;
@@ -85,7 +86,80 @@
 @media screen and (max-width: 780px) {
 	.index-banner {
     background: url('/assets/images/index/bg_home_banner2.png');
-    background-size: contain;
-    height: 338px;
+    background-size: 100%;
+    height: auto;
+    .index-banner-all {
+      box-sizing: border-box;
+      width: 100%;
+      padding-left: 20px;
+      padding-bottom: 7.6vw;
+      .slogan {
+        margin-top: 14.5vw;
+        width: 60vw;
+      }
+      .desc {
+        color: #8E8E8E;
+        font-size: 13px;
+        line-height: 15px;
+        margin-top: 2vw;
+        margin-bottom: 5.2vw;
+      }
+      .btns {
+        overflow: hidden;
+        .btn {
+          box-sizing: border-box;
+          display: inline-block;
+          width: 122px;
+          height: 32px;
+          line-height: 28px;
+          position: relative;
+          border-radius: 16px;
+          font-size: 12px;
+          &::after {
+            content: '';
+            width: 16px;
+            height: 7px;
+            right: 4px;
+          }
+          &.left-btn {
+            border: 2px solid #F35027;
+            background-color: #F35027;
+            margin-right: 17px;
+          }
+          &.right-btn {
+            border: 2px solid #D0D0D0;
+          }
+        }
+      }
+      .more {
+        margin-top: 8.5vw;
+        max-width: 385px;
+        max-width: max-content;
+        height: 34px;
+        background: #000000;
+        border-radius: 17px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0px 10px 0px 0px;
+        transform: scale(0.75);
+        transform-origin: left center;
+        .promo {
+          height: 34px;
+        }
+        .content {
+          color: #8E8E8E;
+          font-size: 9px;
+          line-height: 17px;
+          margin: 0px 5px 0px 2px;
+        }
+        .detail {
+          color: #fff;
+          font-size: 9px;
+          line-height: 10px;
+          text-decoration: underline;
+        }
+      }
+    }
 	}
 }

@@ -72,17 +72,72 @@
 
 @media screen and (max-width: 780px) {
   .common-footer-wrap {
-    height: 58px;
+    height: auto;
     .common-footer {
+      position: relative;
+      box-sizing: border-box;
       width: 100%;
+      height: 600px;
+      padding: 27px 20px 56px;
       .logo-wrap {
+        display: inline-block;
+        padding-top: 0px;
         .logo-pic {
-          width: 97px;
-          margin: 12px 10px auto 16px;
+          width: 140px;
+          margin: 0px;
         }
       }
       .pc-nav {
-        display: none;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        position: absolute;
+        top: 160px;
+        left: 20px;
+        padding-top: 0pc;
+        .nav-item {
+          color: #fff;
+          font-size: 16px;
+          height: 50px;
+          line-height: 50px;
+          letter-spacing: 1.2px;
+          margin-left: 0px;
+          &:hover {
+            color: #F35027;
+          }
+          &.active {
+            color: #F35027;
+          }
+        }
+      }
+      .contact-list {
+        position: absolute;
+        top: 90px;
+        left: 20px;
+        .contact-item {
+          display: inline-block;
+          width: 24px;
+          height: 24px;
+          margin-right: 26px;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+      .copyright {
+        position: absolute;
+        top: 502px;
+        left: 20px;
+        .cr {
+          display: block;
+          line-height: 50px;
+          font-weight: 400;
+          color: #8E8E8E;
+          &:first-of-type {
+            margin-right: 0px;
+          }
+        }
       }
     }
   }

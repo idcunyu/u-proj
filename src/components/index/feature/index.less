@@ -2,6 +2,12 @@
   background-color: #181818;
   width: 100%;
   height: 1092px;
+  .pc {
+    display: block;
+  }
+  .wap {
+    display: none;
+  }
   .index-feature-all {
     width: 1200px;
     margin: 0px auto;
@@ -76,6 +82,85 @@
 
 @media screen and (max-width: 780px) {
 	.index-feature {
-    height: 338px;
+    height: auto;
+    .pc {
+      display: none;
+    }
+    .wap {
+      display: block;
+    }
+    .index-feature-all {
+      box-sizing: border-box;
+      padding-top: 17vw;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-bottom: 20vw;
+      width: 100%;
+      .title {
+        text-align: center;
+        color: #F35027;
+        font-size: 10px;
+        line-height: 12px;
+        letter-spacing: 1.88px;
+        margin-bottom: 10px;
+      }
+      .d1 {
+        color: #F7F7F7;
+        font-size: 20px;
+        text-align: center;
+        line-height: 24px;
+        font-weight: 500;
+        margin-bottom: 10px
+      }
+      .d2 {
+        color: #8E8E8E;
+        font-size: 14px;
+        line-height: 30px;
+        font-weight: 400;
+        text-align: center;
+        margin-bottom: 33px;
+      }
+      .feature-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: nowrap;
+        .feature-item {
+          box-sizing: border-box;
+          width: 100%;
+          height: 300px;
+          border-radius: 5px;
+          border: 1px solid #2F2F2F;
+          margin-bottom: 30px;
+          margin-right: 0px;
+          display: flex;
+          flex-direction: column;
+          flex-wrap: nowrap;
+          align-items: center;
+          padding: 30px 18px 0px;
+          .feature-pic {
+            width: 60px;
+            height: 60px;
+          }
+          .feature-title {
+            text-align: center;
+            margin: 16px auto 20px;
+            color: #fff;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 19px;
+            letter-spacing: 1px;
+          }
+          .feature-desc {
+            text-align: center;
+            font-size: 16px;
+            font-weight: 400;
+            color: #8E8E8E;
+            line-height: 26px;
+          }
+  
+        }
+      }
+    }
 	}
 }

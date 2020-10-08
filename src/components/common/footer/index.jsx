@@ -35,7 +35,7 @@ class CommonFooter extends Component {
           </div>
 
           <div className="copyright">
-            <div className="cr">&copyright 2019 Unimine | All Rights Reserved.</div>
+            <div className="cr">&copy; 2019 Unimine | All Rights Reserved.</div>
             <div className="cr">contact@unimine.org</div>
           </div>
         </div>
