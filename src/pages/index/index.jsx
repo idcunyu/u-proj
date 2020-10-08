@@ -8,7 +8,7 @@ import IndexRound from '@components/index/round/index';
 
 class PageIndex extends Component {
   componentDidMount() {
-    document.title = 'Unimine Home'
+    document.title = 'Unimine - Home'
   }
 
   render() {
