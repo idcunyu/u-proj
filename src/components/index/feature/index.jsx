@@ -44,21 +44,21 @@ class IndexFeature extends Component {
     return (
       <div className="index-feature">
         <div className="index-feature-all">
-          <div className="title">FEATURES</div>
-          <div className="d1 pc">
+          <div className="title wow fadeIn">FEATURES</div>
+          <div className="d1 pc wow fadeInDown">
             Unimine is the best platform to<br/>
             get started mining<br/>
             cryptocurrency.
           </div>
-          <div className="d1 wap">
+          <div className="d1 wap wow fadeInDown">
             Unimine is the best platform to get started mining<br/>
             cryptocurrency.
           </div>
-          <div className="d2 pc">
+          <div className="d2 pc wow fadeInDown">
             Unimine is the best platform to get started mining cryptocurrency. It is the easiest platform for<br/>
             beginners to easily get into Blockchain.
           </div>
-          <div className="d2 wap">
+          <div className="d2 wap wow fadeInDown">
             Unimine is the best platform to get started mining<br/>
             cryptocurrency. It is the easiest platform for<br/>
             beginners to easily get into Blockchain.
@@ -66,7 +66,7 @@ class IndexFeature extends Component {
           <div className="feature-list">
             {featureList && featureList.length ? featureList.map((item, index) => {
               return (
-                <div className="feature-item" key={'feature' + index}>
+                <div className="feature-item wow bounceInRight" data-wow-delay={`${(index + 1) * 200}ms`} key={'feature' + index}>
                   <img src={item.pic || ''} alt="feature" className="feature-pic"/>
                   <div className="feature-title">{item.title || ''}</div>
                   <div className="feature-desc" dangerouslySetInnerHTML={{__html: item.desc || ''}}></div>

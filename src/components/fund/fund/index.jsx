@@ -73,19 +73,19 @@ class FundCpt extends Component {
     return (
       <div className="fund-cpt">
         <div className="fund-cpt-all">
-          <div className="title">FUND</div>
-          <div className="d1">
+          <div className="title wow fadeIn">FUND</div>
+          <div className="d1 wow fadeInDown">
             Unimine Cryptocurrency sale<br/>
             Do Not Miss It!
           </div>
-          <div className="d2 pc">
+          <div className="d2 pc wow fadeInDown">
             Limited supply: After fund ends, UMI obtained only through mining & exchanges.
           </div>
-          <div className="d2 wap">
+          <div className="d2 wap wow fadeInDown">
             Limited supply: After fund ends, UMI obtained only<br/> through mining & exchanges.
           </div>
           <div className="boxs">
-            <div className="box left">
+            <div className="box left wow bounceInLeft">
               <div className="desc">
                 UMI Token fund will be end at<br/>
                 {endTimeStr}.
@@ -109,7 +109,7 @@ class FundCpt extends Component {
                 </div>
               </div>
             </div>
-            <div className="box right">
+            <div className="box right wow bounceInRight">
               <div className="desc">
                 500,000 UMI were supplied totally.
               </div>
@@ -127,14 +127,14 @@ class FundCpt extends Component {
           </div>
 
           <div className="purchase-wrap">
-            <Input value={inputEth}  suffix="ETH" onChange={this.onChangeEth} />
-            <div className="show-purchase">
+            <Input value={inputEth}  suffix="ETH" onChange={this.onChangeEth} className="wow bounceInUp" />
+            <div className="show-purchase wow bounceInUp">
               100UMI per ETH, <span>{inputEth ? (Number(inputEth) * 100).toFixed(2) : 0}</span> UMI received.
             </div>
-            <Button type="primary" className="purchase-btn" onClick={this.onPurchase}>PURCHASE NOW</Button>
+            <Button type="primary" className="purchase-btn wow bounceInUp" onClick={this.onPurchase}>PURCHASE NOW</Button>
           </div>
           
-          <div className="more">
+          <div className="more wow fadeInDown">
             <img src="/assets/images/index/promo.png" alt="promo" className="promo"/>
             <div className="content">
               <div className="ctt">

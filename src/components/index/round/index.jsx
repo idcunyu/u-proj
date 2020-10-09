@@ -32,20 +32,20 @@ class IndexRound extends Component {
     return (
       <div className="index-round">
         <div className="index-round-all">
-          <div className="title">Rounds</div>
-          <div className="d1">
+          <div className="title wow fadeIn">Rounds</div>
+          <div className="d1 wow fadeInDown">
             The Unimine Period
           </div>
-          <div className="d2 pc">
+          <div className="d2 pc wow fadeInDown">
             This is the development goals for Unimine.More functions and services will be<br/> opened at different times.
           </div>
-          <div className="d2 wap">
+          <div className="d2 wap wow fadeInDown">
             This is the development goals for Unimine.More<br/> functions and services will be opened at different<br/> times.
           </div>
           <div className="round-list">
             {roundList && roundList.length ? roundList.map((item, index) => {
               return (
-                <div className="round-item" key={'round' + index}>
+                <div className="round-item wow bounceInRight" data-wow-delay={`${(index + 1) * 250}ms`} key={'round' + index}>
                   <img src={item.pic || ''} alt="round" className="round-pic"/>
                   <div className="round-stage">STAGE {index + 1}</div>
                   <div className="round-title">{item.title || ''}</div>
