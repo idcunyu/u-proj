@@ -43,7 +43,7 @@ class FundAbout extends Component {
               </div>
             </div>
             
-            <Button type="primary" className="about-btn wow bounceInRight" onClick={this.onGotoPage}>
+            <Button type="primary" className="about-btn wow fadeInDown" onClick={this.onGotoPage}>
               ABOUT UMI-TOKEN <img src="/assets/images/index/ic_btn_arrowright.png" alt="token"></img>
             </Button>
           </div>

@@ -45,7 +45,7 @@ class IndexRound extends Component {
           <div className="round-list">
             {roundList && roundList.length ? roundList.map((item, index) => {
               return (
-                <div className="round-item wow bounceInRight" data-wow-delay={`${(index + 1) * 250}ms`} key={'round' + index}>
+                <div className="round-item wow fadeInDown" data-wow-delay={`${(index + 1) * 250}ms`} key={'round' + index}>
                   <img src={item.pic || ''} alt="round" className="round-pic"/>
                   <div className="round-stage">STAGE {index + 1}</div>
                   <div className="round-title">{item.title || ''}</div>

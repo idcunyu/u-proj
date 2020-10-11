@@ -66,7 +66,7 @@ class IndexFeature extends Component {
           <div className="feature-list">
             {featureList && featureList.length ? featureList.map((item, index) => {
               return (
-                <div className="feature-item wow bounceInRight" data-wow-delay={`${(index + 1) * 200}ms`} key={'feature' + index}>
+                <div className="feature-item wow fadeInDown" data-wow-delay={`${(index + 1) * 100}ms`} key={'feature' + index}>
                   <img src={item.pic || ''} alt="feature" className="feature-pic"/>
                   <div className="feature-title">{item.title || ''}</div>
                   <div className="feature-desc" dangerouslySetInnerHTML={{__html: item.desc || ''}}></div>
