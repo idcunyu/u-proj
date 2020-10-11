@@ -85,7 +85,7 @@ class FundCpt extends Component {
             Limited supply: After fund ends, UMI obtained only<br/> through mining & exchanges.
           </div>
           <div className="boxs">
-            <div className="box left wow bounceInLeft">
+            <div className="box left wow fadeInLeft">
               <div className="desc">
                 UMI Token fund will be end at<br/>
                 {endTimeStr}.
@@ -109,7 +109,7 @@ class FundCpt extends Component {
                 </div>
               </div>
             </div>
-            <div className="box right wow bounceInRight">
+            <div className="box right wow fadeInRight">
               <div className="desc">
                 500,000 UMI were supplied totally.
               </div>
@@ -127,14 +127,14 @@ class FundCpt extends Component {
           </div>
 
           <div className="purchase-wrap">
-            <Input value={inputEth}  suffix="ETH" onChange={this.onChangeEth} className="wow bounceInUp" />
-            <div className="show-purchase wow bounceInUp">
+            <Input value={inputEth}  suffix="ETH" onChange={this.onChangeEth} className="wow fadeInUp" />
+            <div className="show-purchase wow fadeInUp">
               100UMI per ETH, <span>{inputEth ? (Number(inputEth) * 100).toFixed(2) : 0}</span> UMI received.
             </div>
-            <Button type="primary" className="purchase-btn wow bounceInUp" onClick={this.onPurchase}>PURCHASE NOW</Button>
+            <Button type="primary" className="purchase-btn wow fadeInUp" onClick={this.onPurchase}>PURCHASE NOW</Button>
           </div>
           
-          <div className="more wow fadeInDown">
+          <div className="more wow fadeInUp">
             <img src="/assets/images/index/promo.png" alt="promo" className="promo"/>
             <div className="content">
               <div className="ctt">
